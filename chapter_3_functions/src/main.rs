@@ -5,7 +5,8 @@ fn main() {
 
     first_fn();
 
-    single_params(23)
+    single_params(23);
+    multi_params(33, 'f');
 }
 
 // simple function
@@ -18,4 +19,8 @@ fn first_fn() {
 
 fn single_params(x: i32) {
     println!("The value of x - {}",x);
+}
+
+fn multi_params(x: i32, y: char) {
+    println!("The value of x - {x} & The value of y - {y}")
 }

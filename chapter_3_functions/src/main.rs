@@ -8,6 +8,9 @@ fn main() {
     single_params(23);
     multi_params(33, 'f');
     expression();
+
+    let value = return_fn();
+    println!("The value of return function is : {}", value);
 }
 
 // simple function
@@ -33,4 +36,11 @@ fn expression() {
     };
 
     println!("The value of x - {}",x);
+}
+
+// to return a function
+// using arrow function we return the value of the function
+
+fn return_fn() -> i32 {
+    66 + 88
 }

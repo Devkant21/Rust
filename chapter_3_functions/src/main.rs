@@ -7,6 +7,7 @@ fn main() {
 
     single_params(23);
     multi_params(33, 'f');
+    expression();
 }
 
 // simple function
@@ -23,4 +24,13 @@ fn single_params(x: i32) {
 
 fn multi_params(x: i32, y: char) {
     println!("The value of x - {x} & The value of y - {y}")
+}
+
+fn expression() {
+    let x = {
+        let y = 9;
+        y + 1
+    };
+
+    println!("The value of x - {}",x);
 }

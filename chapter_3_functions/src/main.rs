@@ -35,7 +35,7 @@ fn expression() {
         y + 1
     };
 
-    println!("The value of x - {}",x);
+    println!("The value of x {}",x);
 }
 
 // to return a function

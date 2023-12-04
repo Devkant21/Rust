@@ -31,10 +31,21 @@ fn main() {
 
     //  tuples
 
-    let tup = (32,45,66.77);
+    let mut tup = (32,45,66.77);
 
     println!("{:?}", tup);
 
     println!("{}", tup.1);
     println!("{}", tup.2);
+
+    tup.2 = 88.7;
+
+    println!("{:?}", tup);
+
+    // Arrays
+
+    let array = [34, 66, 09, 87];
+    println!("{:?}", array);
+
+    println!("{}", array[3]);
 }

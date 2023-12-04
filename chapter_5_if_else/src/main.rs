@@ -3,6 +3,7 @@ fn main() {
 
     first();
     second();
+    third();
 
 }
 
@@ -38,4 +39,14 @@ fn second() {
     else {
         println!("This no is divisible by anyone");
     }
+}
+
+// short hand
+
+fn third() {
+    let condition = true;
+
+    let number = if condition {5} else {0};
+
+    println!("The number is {}", number);
 }
